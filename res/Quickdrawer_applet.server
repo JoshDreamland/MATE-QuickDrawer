@@ -1,0 +1,26 @@
+<oaf_info>
+<oaf_server iid="OAFIID:QuickdrawerApplet_Factory" type="exe"
+            location="/usr/lib/mate-panel/quickdrawer.app">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+                <item value="IDL:MateComponent/GenericFactory:1.0"/>
+                <item value="IDL:MateComponent/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="Quickdrawer Applet Factory"/>
+        <oaf_attribute name="description" type="string" value="Factory to create the Quickdrawer applet"/>
+</oaf_server>
+
+<oaf_server iid="OAFIID:QuickdrawerApplet" type="factory"
+            location="OAFIID:QuickdrawerApplet_Factory">
+
+        <oaf_attribute name="repo_ids" type="stringv">
+                <item value="IDL:MATE/Vertigo/PanelAppletShell:1.0"/>
+                <item value="IDL:MateComponent/Control:1.0"/>
+                <item value="IDL:MateComponent/Unknown:1.0"/>
+        </oaf_attribute>
+        <oaf_attribute name="name" type="string" value="Quickdrawer Applet"/>
+        <oaf_attribute name="description" type="string" value="A drawer-like applet allowing fast selection of an often-used item."/>
+        <oaf_attribute name="panel:category" type="string" value="Amusements"/>
+        <oaf_attribute name="panel:icon" type="string" value="/usr/share/pixmaps/mate-quickdrawer.svg"/>
+</oaf_server>
+</oaf_info>

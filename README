@@ -1,0 +1,59 @@
+MATE QuickDrawer Applet
+Compile and Install instructions
+
+
+== DEPENDENCIES ==
+
+You will need the gnome panel development packages for your platform. On Ubuntu, use
+the following command:
+
+sudo apt-get install libmate-menu-dev libgtk2.0-dev libmatepanelapplet
+make
+sudo make install
+
+Beyond that, I don't know of any additional libraries that are required. That seemed
+to get the job done on this computer. While I've managed to get it built and working
+on SUSE, I don't have the pacjage lists. They weren't all that hard to find; they're
+in fact quite similar to Ubuntu's above. Maybe I'll update this later with the exact
+package names.
+
+
+== BUILDING ==
+
+If you wish to just build (but not install) quickdrawer, a simple call to make will
+suffice. You can place the server file and other resources under the 'res' directory
+where needed on your platform.
+
+
+
+== INSTALLING ==
+
+Assuming your installation is standard, the makefile (in accordance with the latest
+defacto standard) can install the applet for you automatcally. Once you install the
+dependencies, call `make` to build, then `sudo make install` to install.
+
+sudo apt-get install 
+ 
+sudo make install
+
+If that command fails on your system, feel free to leave an artifact on the project's
+bug tracker and I will deal with it as I am able.
+
+
+== ACKNOWLEDGEMENTS ==
+
+Special thanks to Tristan from #GTK+ on irc.gnome.net for his help in working through
+odd behaviors and missing documentation in GNOME, and specoal thanks as well to juhaz
+from ##GNOME on irc.freenode.net. Thanks also to stefano-k and xpander69 at #mate for
+help porting over from GNOME. Finally, thanks to anyone else that recommended me some
+particular method of doing something along the way.
+
+I remorselessly stole some code for highlighting (increasing the brightness of) pixel
+buffers as done in default GNOME Launchers from the gnome-quick-lounge applet. Thanks
+both to the original author of that code, and to the author of the gnome-quick-lounge
+applet for facilitating the easy acquisition of the code.
+
+And lastly, thank you to the author of the implementation of gtk_tree_model_iter_prev
+I use in preferences.c. I do not actually know where the code came from (I believe it
+was from Totem) as it was scavenged from a Google search for gtk_tree_model_iter_prev
+coupled with the word "void".

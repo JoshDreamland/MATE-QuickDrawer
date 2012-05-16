@@ -1,0 +1,16 @@
+[Applet Factory]
+Id=QuickdrawerAppletFactory
+Location=/usr/lib/mate-panel/quickdrawer.app
+Name=Quickdrawer Applet Factory
+Description=Factory to create the Quickdrawer applet
+
+[QuickdrawerApplet]
+Name=Quickdrawer Applet
+Description=A drawer-like applet allowing fast selection of an often-used item.
+Icon=/usr/share/pixmaps/mate-quickdrawer.svg
+MateComponentId=OAFIID:QuickdrawerApplet_Factory
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=mate-panel
+X-MATE-Bugzilla-Component=panel applets
+X-MATE-Bugzilla-Version=0
+X-MATE-Bugzilla-OtherBinaries=quickdrawer.app
