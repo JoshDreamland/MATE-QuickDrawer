@@ -7,7 +7,7 @@ Compile and Install instructions
 You will need the gnome panel development packages for your platform. On Ubuntu, use
 the following command:
 
-sudo apt-get install libmate-menu-dev libgtk2.0-dev libmatepanelapplet
+sudo apt-get install libmate-menu-dev libgtk2.0-dev libmatepanelapplet-dev
 make
 sudo make install
 
